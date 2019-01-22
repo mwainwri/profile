@@ -1,0 +1,86 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+
+    .icon {
+      background-image: url('../../assets/images/sprites/sprite-4fc3667b.svg');
+    }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+  }
+
+  .icon--alignable {
+    width: 240.64px;
+    height: 52.47px;
+    background-position: 0 0;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+  }
+
+  .icon--behance {
+    width: 47.05px;
+    height: 30.03px;
+    background-position: 69.99226604795051% 37.756350291429804%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+  }
+
+  .icon--facebook {
+    width: 23.23px;
+    height: 44.01px;
+    background-position: 30.307204849152775% 81.98255860468836%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+  }
+
+  .icon--facebook_info {
+    width: 22.92px;
+    height: 47.09px;
+    background-position: 30.26412325752018% 43.039947502255764%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+  }
+
+  .icon--linkedin {
+    width: 46.83px;
+    height: 47.09px;
+    background-position: 45.7949219755884% 43.039947502255764%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+  }
+
+  .icon--mail {
+    width: 66px;
+    height: 50px;
+    background-position: 0 44.09243697478992%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+  }
+
+  .icon--star {
+    width: 66px;
+    height: 66px;
+    background-position: 0 99.48543689320388%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+  }
+
+  .icon--youtube {
+    width: 36.75px;
+    height: 44px;
+    background-position: 43.686658506731945% 81.976%;
+  }

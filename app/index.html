@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <title>Online Profile</title>
+  <meta name="keywords" content="Profile, resume, online profile, online resume">
+  <meta name="description" content="An online resume that displays some of the skills I have learned.">
+  
+  <!-- build:css assets/styles/styles.css -->
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <!-- endbuild -->
+
+  <!-- build:js assets/scripts/Vendor.js -->
+  <script src="temp/scripts/Vendor.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+ <div class="wrapper">
+  <div class="info">
+    <div class="info__photo-container">
+      <img class="info__photo-container__img" sizes="320px" srcset="assets/images/profile-photo.png 320w, assets/images/profile-photo-hi-dpi.png 740w" alt="My Profile Photo">
+    </div>
+
+    <div class="info__general-container">
+      <ul class="info__text">
+        <li>Name: <span class="info__text--light">Michael Wainwright</span></li>
+        <li>Current Title: <span class="info__text--light">Owner</span></li>
+        <li>Occupation:<br> <span class="info__text--light">Print and Marketing</span></li>
+        <li>Email: <span class="info__text--light">Sales@rfdprint</span></li>
+      </ul>
+
+     
+
+      <div class="info__profile-link">
+          <hr class="info__divider">
+          <ul class="info__text">
+              <li><a>Git Hub</a></li>
+              <li><a>Adobe Profile</a></li>
+            </ul>
+            <hr class="info__divider">  
+      </div>
+
+   
+     
+      <div class="social-icons">
+          <a herf="#" class="social-icons__icon social-icons__icon--large"><span class="icon icon--alignable"></span></a>
+          <a herf="#" class="social-icons__icon"><span class="icon icon--behance"></span></a>
+          <a herf="#" class="social-icons__icon"><span class="icon icon--facebook_info"></span></a>
+          <a herf="#" class="social-icons__icon"><span class="icon icon--linkedin"></span></a>
+        </div>
+
+    </div>
+
+  </div>
+  <div class="profile-header"></div>
+
+  <div class="profile-tabs-container">
+    <div class="profile-tabs"></div>
+    <div class="profile-tabs-content"></div>
+  </div>
+</div>
+
+  <footer class="site-footer">
+    <div class="wrapper wrapper--narrow">
+      <p><span class="site-footer__text">Copyright &copy; 2016 Clear View Escapes. All rights reserved.</span> <a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div class="modal__inner">
+        <h2 class="section-title section-title--blue section-title--less-margin"><span class="icon icon--mail section-title__icon"></span> Get in<strong>Touch</strong></h2>
+        <div class="wrapper">
+          <p class="modal__description">We will have an online order system in place soon.  Until then, connect with us on any of the platforms below!</p>
+        </div>
+       <div class="social-icons">
+         <a herf="#" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
+         <a herf="#" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
+         <a herf="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
+         <a herf="#" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
+       </div>
+    </div>
+    
+
+  <div class="modal__close">X</div>
+  </div>
+  <!-- build:js assets/scripts/apps.js -->
+  <script src="temp/scripts/app.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

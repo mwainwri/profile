@@ -1,0 +1,48 @@
+.info {
+    margin: 18px;
+    margin-bottom: 100px;
+    padding: 25px;
+    background-color: $mainBlue;
+    max-width:400px;
+
+    @mixin atLarge{
+        min-height: 1037px;
+    }
+
+    &__general-container{
+        padding: 15px;
+    }
+
+    &__divider {
+        color: #FFF;
+        background-color: #FFF;
+        width: 80%;
+    }
+
+    &__photo-container{
+        background-color: $subBlue;
+        margin: 18px auto;
+        width: 320px;
+        height: auto;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        font-weight: 700;
+        color: #FFF;
+
+
+        &--light{
+        font-size: 1.5rem;
+        line-height: 1;
+        font-weight: 200;
+        color: #FFF;
+        }
+    }
+
+   &__profile-link{
+       margin-top: 48px;
+    text-align: center;
+   }
+}
