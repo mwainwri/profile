@@ -25,6 +25,10 @@ ul {
 
 hr {
   height: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin: 0;
 }

@@ -4,7 +4,8 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <title>Online Profile</title>
+  <title>
+    Profile</title>
   <meta name="keywords" content="Profile, resume, online profile, online resume">
   <meta name="description" content="An online resume that displays some of the skills I have learned.">
   
@@ -18,47 +19,167 @@
 </head>
 <body>
  <div class="wrapper">
-  <div class="info">
-    <div class="info__photo-container">
-      <img class="info__photo-container__img" sizes="320px" srcset="assets/images/profile-photo.png 320w, assets/images/profile-photo-hi-dpi.png 740w" alt="My Profile Photo">
-    </div>
 
-    <div class="info__general-container">
-      <ul class="info__text">
-        <li>Name: <span class="info__text--light">Michael Wainwright</span></li>
-        <li>Current Title: <span class="info__text--light">Owner</span></li>
-        <li>Occupation:<br> <span class="info__text--light">Print and Marketing</span></li>
-        <li>Email: <span class="info__text--light">Sales@rfdprint</span></li>
-      </ul>
-
-     
-
-      <div class="info__profile-link">
-          <hr class="info__divider">
-          <ul class="info__text">
-              <li><a>Git Hub</a></li>
-              <li><a>Adobe Profile</a></li>
-            </ul>
-            <hr class="info__divider">  
-      </div>
-
-   
-     
-      <div class="social-icons">
-          <a herf="#" class="social-icons__icon social-icons__icon--large"><span class="icon icon--alignable"></span></a>
-          <a herf="#" class="social-icons__icon"><span class="icon icon--behance"></span></a>
-          <a herf="#" class="social-icons__icon"><span class="icon icon--facebook_info"></span></a>
-          <a herf="#" class="social-icons__icon"><span class="icon icon--linkedin"></span></a>
+    <div class="row__large-8">
+        <div class="site-header">
+            <hr class="headline__divider">
+            <h1 class="headline headline--centered headline--no-margin">Michael Wainwright</h1>
+            <hr class="headline__divider">
         </div>
 
+        <div class="tabs">
+
+              	<ul class="tabs__tab-links-wrapper">
+                    <li id="experience-tab" class="tabs__tab-links tabs--current-link" data-tab="tab-1">Experience</li>
+                    <li id="skills-tab" class="tabs__tab-links" data-tab="tab-2">Skills</li>
+                    <li id="profile-tab"class="tabs__tab-links" data-tab="tab-3">Personal Profile</li>
+                    <li id="portfolio-tab"class="tabs__tab-links" data-tab="tab-4">Design Portfolio</li>
+                </ul>
+  
+              <div id="tab-1" class="tabs__content tabs--current-tab"> <!--Experience Tab Content-->
+                  
+                  <div class="tabs__card"> <!--Card Begins-->
+                        <div class="tabs__card-header">
+                          <div class="row__tab-content-left">
+                              <ul class="headline--card-medium  headline--no-margin">
+                                  <li>Job: <span class="headline--card-light">Proshine Floors</span></li>
+                                  <li>Title: <span class="headline--card-light">Floor Scrubber</span></li>
+                              </ul>
+                          </div>
+                          <div class="row__tab-content-right row--gutters-small">
+                              <ul class="headline--card-medium ">
+                                  <li>Years Worked: <span class="headline--card-light">2012-2013</span></li>
+                              </ul>
+                          </div>
+                      </div>   
+                    <div class="tabs__card-content">
+                        <div class="row__tab-content-left">
+                          <p class="headline--card-medium">Resonsibilites:</p>
+                          <p> Nam adipiscing. Pellentesque ut neque. Ut tincidunt tincidunt erat. Suspendisse feugiat. Nam adipiscing.</p>     
+                        </div>
+                    </div>
+                  </div> <!--Card Ends-->
+
+                  <div class="tabs__card"> <!--Card Begins-->
+                    <div class="tabs__card-header">
+                      <div class="row__tab-content-left">
+                          <ul class="headline--card-medium  headline--no-margin">
+                              <li>Job: <span class="headline--card-light">Proshine Floors</span></li>
+                              <li>Title: <span class="headline--card-light">Floor Scrubber</span></li>
+                          </ul>
+                      </div>
+                      <div class="row__tab-content-right row--gutters-small">
+                          <ul class="headline--card-medium ">
+                              <li>Years Worked: <span class="headline--card-light">2012-2013</span></li>
+                          </ul>
+                      </div>
+                  </div>   
+                <div class="tabs__card-content">
+                    <div class="row__tab-content-left">
+                      <p class="headline--card-medium">Resonsibilites:</p>
+                      <p> Nam adipiscing. Pellentesque ut neque. Ut tincidunt tincidunt erat. Suspendisse feugiat. Nam adipiscing.</p>     
+                    </div>
+                </div>
+              </div> <!--Card Ends-->
+             
+            </div> <!--Experience Tab Content Ends-->
+
+
+            <div id="tab-2" class="tabs__content"> <!--Skills Tab Content-->
+                  
+              <div class="tabs__card"> <!--Card Begins-->
+                    <div class="tabs__card-header"> <!--Card Header-->
+                      <div class="row__tab-content-left">
+                              <h1 class="headline--card-medium">Tool Experience</h1>
+                      </div>
+                      <div class="row__tab-content-right row--gutters-small">
+                              <h1 class="headline--card-medium">Skills Learned</h1>
+                      </div>
+                  </div>   
+                <div class="tabs__card-content">
+                    <div class="row__tab-content-left ">
+                      <p class="headline--card-medium">Resonsibilites:</p>
+                      <p> Nam adipiscing. Pellentesque ut neque. Ut tincidunt tincidunt erat. Suspendisse feugiat. Nam adipiscing.</p>     
+                    </div>
+                </div>
+              </div> <!--Card Ends-->
+
+              <div class="tabs__card"> <!--Card Begins-->
+                <div class="tabs__card-header">
+                  <div class="row__tab-content-left">
+                      <ul class="headline--card-medium  headline--no-margin">
+                          <li>Job: <span class="headline--card-light">Proshine Floors</span></li>
+                          <li>Title: <span class="headline--card-light">Floor Scrubber</span></li>
+                      </ul>
+                  </div>
+                  <div class="row__tab-content-right">
+                      <ul class="headline--card-medium ">
+                          <li>Years Worked: <span class="headline--card-light">2012-2013</span></li>
+                      </ul>
+                  </div>
+              </div>   
+            <div class="tabs__card-content">
+                <div class="row__tab-content-left">
+                  <p class="headline--card-medium">Resonsibilites:</p>
+                  <p> Nam adipiscing. Pellentesque ut neque. Ut tincidunt tincidunt erat. Suspendisse feugiat. Nam adipiscing.</p>     
+                </div>
+            </div>
+          </div> <!--Card Ends-->
+         
+        </div> <!--Skills Tab Content Ends-->
+
+        <div id="tab-3" class="tabs__content"></div> <!--Profile Tab Content-->
+        <div id="tab-4" class="tabs__content"></div> <!--Portfolio Tab Content-->
+
+        </div>
+
+
+
+      </div>
+
+    <div class="row__large-4 ">
+    <div class="info">
+      <div class="info__photo-container">
+        <img class="info__photo-container__img" sizes="320px" srcset="assets/images/profile-photo.png 320w, assets/images/profile-photo-hi-dpi.png 740w" alt="My Profile Photo">
+      </div>
+
+      <div class="info__general-container">
+        <ul class="headline--medium  headline--inverted">
+          <li>Name: <span class="headline--light">Michael Wainwright</span></li>
+          <li>Current Title: <span class="headline--light">Owner</span></li>
+          <li>Occupation:<br> <span class="headline--light">Print and Marketing</span></li>
+          <li>Email: <span class="headline--light">Sales@rfdprint</span></li>
+        </ul>
+
+      
+
+        <div class="info__profile-link">
+            <hr class="info__divider">
+            <ul class="headline--medium  headline--inverted">
+                <li><a>Git Hub</a></li>
+                <li><a>Adobe Profile</a></li>
+              </ul>
+              <hr class="info__divider">  
+        </div>
+
+    
+      
+        <div class="social-icons">
+            <a herf="#" class="social-icons__icon social-icons__icon--large"><span class="icon icon--alignable"></span></a>
+            <a herf="#" class="social-icons__icon"><span class="icon icon--behance"></span></a>
+            <a herf="#" class="social-icons__icon"><span class="icon icon--facebook_info"></span></a>
+            <a herf="#" class="social-icons__icon"><span class="icon icon--linkedin"></span></a>
+          </div>
+
+      </div>
+
     </div>
+    <div class="profile-header"></div>
 
-  </div>
-  <div class="profile-header"></div>
-
-  <div class="profile-tabs-container">
-    <div class="profile-tabs"></div>
-    <div class="profile-tabs-content"></div>
+    <div class="profile-tabs-container">
+      <div class="profile-tabs"></div>
+      <div class="profile-tabs-content"></div>
+    </div>
   </div>
 </div>
 

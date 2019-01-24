@@ -66,6 +66,14 @@
   }
 
   @mixin atLarge {
+    &__tab-content-left{
+      float: left;
+      width:50%;
+    }
+    &__tab-content-right{
+       float: right;
+        width:50%;
+    }
 
     &__b-margin-until-large {
       margin-bottom: 0;
@@ -86,7 +94,7 @@
     }
 
     &__large-8 {
-      float: left;
+      float: right;
       width: 66.66%;
     }
 

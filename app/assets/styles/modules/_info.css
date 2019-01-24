@@ -17,6 +17,8 @@
         color: #FFF;
         background-color: #FFF;
         width: 80%;
+         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     &__photo-container{
@@ -24,21 +26,6 @@
         margin: 18px auto;
         width: 320px;
         height: auto;
-    }
-
-    &__text {
-        font-size: 1.5rem;
-        line-height: 1.5;
-        font-weight: 700;
-        color: #FFF;
-
-
-        &--light{
-        font-size: 1.5rem;
-        line-height: 1;
-        font-weight: 200;
-        color: #FFF;
-        }
     }
 
    &__profile-link{

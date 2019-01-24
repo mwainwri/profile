@@ -1,0 +1,68 @@
+.tabs {
+    max-width: 600px;
+    margin: 35px auto;
+    
+    &__tab-links-wrapper{
+        @mixin clearfix;
+        margin: 0 auto;
+    }
+
+    &__tab-links{
+         color: $mainBlue;
+         border-color: $mainBlue;
+         border-style: solid;
+         border-width: 1px;
+         background-color: $subBlue;
+         padding: 10px;
+        @mixin atLarge {
+            float: left;
+            width:150px;
+            text-align: center;
+            padding: 20px 15px 20px 15px;
+
+        }
+    }
+
+    &--current-link {
+        background-color: $mainBlue;
+        color: #FFF;
+    }
+  
+    &__content {
+        color: $mainBlue;
+        margin-top: -1px;
+        border-style: solid;
+        display: none;
+        @mixin atLarge{
+            min-height: 600px;
+        }
+    }
+
+    &--current-tab {
+        display: inherit;
+    }
+
+    &__card {
+        width: 90%;
+        margin: 25px auto;
+        border-width: 1px;
+        border-style: solid;
+        box-shadow: 0 4px 8px 0 rgba(#000000, .5);
+       
+    }
+
+    &__card-header{
+        background-color: $subBlue;
+        padding: 5px 10px 5px 10px;
+        width: 100%;
+
+        @mixin atLarge{
+            height: 76px;
+        }
+    }
+
+    &__card-content{
+        @mixin clearfix;
+        padding: 20px;
+    }
+}
