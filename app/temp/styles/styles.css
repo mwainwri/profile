@@ -656,23 +656,23 @@ p {
   }
 
 .headline--medium {
-      font-size: 1.5rem;
-      line-height: 1.9;
-      font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.9;
+    font-weight: 700;
   }
 
 .headline--card-medium {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      font-weight: 600;
-      margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-weight: 600;
+    margin: 0;
   }
 
 .headline--card-small {
-      font-size: 1rem;
-      line-height: 1.8;
-      font-weight: 600;
-      margin: 0;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 600;
+    margin: 0;
   }
 
 .headline--card-left {
@@ -680,16 +680,16 @@ p {
   }
 
 .headline-- {
-    margin-top:20px;
+    margin-top: 20px;
   }
 
-.headline--card-light{
-  font-size: 1rem;
-  line-height: .7;
-  font-weight: 400;
+.headline--card-light {
+    font-size: 1rem;
+    line-height: .7;
+    font-weight: 400;
   }
 
-.headline--inverted{
+.headline--inverted {
     color: #FFF;
   }
 
@@ -704,10 +704,10 @@ p {
   }
   }
 
-.headline--light{
-  font-size: 1.5rem;
-  line-height: 1;
-  font-weight: 300;
+.headline--light {
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 300;
   }
 
 .headline strong {
@@ -723,7 +723,7 @@ p {
   }
 
 .headline--t-margin {
-    margin-top:20px;
+    margin-top: 20px;
   }
 
 .headline--no-t-margin {
@@ -735,17 +735,17 @@ p {
   }
 
 .headline__divider {
-        height: 5px;
-        background-color: #FFF;
-        width: 90%;
-         margin-top: 20px;
-        margin-bottom: 20px;
-    }
+    height: 5px;
+    background-color: #FFF;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
 .headline__divider--blue {
     background-color: #47657F;
     height: 2px;
-    }
+  }
 
 .row--t-padding {
     padding-top: 80px;
@@ -1149,14 +1149,14 @@ Instead edit gulp/templates/sprite */
     display: table;
   }
 
-.tabs__tab-links-wrapper{
+.tabs__tab-links-wrapper {
         display: none;
         margin: 0 auto;
     }
 
 @media (min-width: 800px) {
 
-.tabs__tab-links-wrapper{
+.tabs__tab-links-wrapper {
             display: block;
     }
   }
@@ -1167,7 +1167,7 @@ Instead edit gulp/templates/sprite */
     display: table;
   }
 
-.tabs__tab_drawer{
+.tabs__tab_drawer {
         padding: 10px;
         display: block;
         background-color: #BFD0DF;
@@ -1179,45 +1179,46 @@ Instead edit gulp/templates/sprite */
 
 .tabs__tab_drawer__header {
             color: #47657F;
-             font-size: 1.5rem;
-             line-height: 1.5;
-             font-weight: 700;
-             text-align: center;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            font-weight: 700;
+            text-align: center;
         }
 
 .tabs__tab_drawer__title {
-            padding:10px;
+            padding: 10px;
             margin: 10px;
         }
 
 @media (min-width: 800px) {
 
-.tabs__tab_drawer{
-        display:none
+.tabs__tab_drawer {
+            display: none
 
     }
   }
 
-.tabs__tab-links{
-         color: #47657F;
-         border-color: #47657F;
-         border-style: solid;
-         border-width: 1px;
-         background-color: #BFD0DF;
-         padding: 10px;
+.tabs__tab-links {
+        color: #47657F;
+        border-color: #47657F;
+        border-style: solid;
+        border-width: 1px;
+        background-color: #BFD0DF;
+        padding: 10px;
     }
 
 @media (min-width: 800px) {
 
-.tabs__tab-links{
+.tabs__tab-links {
             float: left;
-            width:150px;
+            width: 150px;
             text-align: center;
             padding: 20px 15px 20px 15px
     }
   }
 
-.tabs--current-link, .tabs--current-link > * {
+.tabs--current-link,
+    .tabs--current-link>* {
         background-color: #47657F;
         color: #FFF;
     }
@@ -1227,16 +1228,16 @@ Instead edit gulp/templates/sprite */
         color: #47657F;
         margin-top: -1px;
         border-style: solid;
-        height:0;
-        padding:0;
-         
-         -webkit-transform-origin: 50% 0;
-         
-                 transform-origin: 50% 0;
-         -webkit-transition: all .5s,height 3s ease-out;
-         transition: all .5s,height 3s ease-out;
-         -webkit-transform: scaleY(0);
-                 transform: scaleY(0);
+        height: 0;
+        padding: 0;
+
+        -webkit-transform-origin: 50% 0;
+
+                transform-origin: 50% 0;
+        -webkit-transition: all .5s, height 3s ease-out;
+        transition: all .5s, height 3s ease-out;
+        -webkit-transform: scaleY(0);
+                transform: scaleY(0);
     }
 
 @media (min-width: 800px) {
@@ -1244,25 +1245,25 @@ Instead edit gulp/templates/sprite */
 .tabs__content {
             margin-bottom: 0px;
             display: none;
-            padding:0;
+            padding: 0;
             //min-height: 600px
     }
   }
 
 .tabs--current-tab {
-       
-         visiblity: visible;   
-         opacity: 1;     
-         -webkit-transform: scaleY(1);     
-                 transform: scaleY(1);
-         margin-bottom: 10px;
-         height:auto;
+
+        visiblity: visible;
+        opacity: 1;
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+        margin-bottom: 10px;
+        height: auto;
     }
 
 @media (min-width: 800px) {
 
 .tabs--current-tab {
-             display: block
+            display: block
     }
   }
 
@@ -1274,14 +1275,14 @@ Instead edit gulp/templates/sprite */
         border-style: solid;
         -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0, .5);
                 box-shadow: 0 4px 8px 0 rgba(0,0,0, .5);
-       
+
     }
 
 .tabs__card p:first-child {
         margin-top: 0;
     }
 
-.tabs__card-header{
+.tabs__card-header {
         background-color: #BFD0DF;
         padding: 5px 10px 5px 10px;
         width: 100%;
@@ -1289,14 +1290,14 @@ Instead edit gulp/templates/sprite */
 
 @media (min-width: 800px) {
 
-.tabs__card-header{
+.tabs__card-header {
             height: 76px
     }
   }
 
 @media (min-width: 800px) {
 
-.tabs__card-header--small{
+.tabs__card-header--small {
             height: 43px
     }
   }
@@ -1306,7 +1307,7 @@ Instead edit gulp/templates/sprite */
         line-height: 1.8;
     }
 
-.tabs__card-content{
+.tabs__card-content {
         padding: 20px;
     }
 

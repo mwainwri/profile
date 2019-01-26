@@ -12,52 +12,55 @@
   }
 
   &--medium {
-      font-size: 1.5rem;
-      line-height: 1.9;
-      font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.9;
+    font-weight: 700;
   }
 
   &--card-medium {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      font-weight: 600;
-      margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-weight: 600;
+    margin: 0;
   }
+
   &--card-small {
-      font-size: 1rem;
-      line-height: 1.8;
-      font-weight: 600;
-      margin: 0;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 600;
+    margin: 0;
   }
+
   &--card-left {
     text-align: right;
   }
 
   &-- {
-    margin-top:20px;
+    margin-top: 20px;
   }
 
-  &--card-light{
-  font-size: 1rem;
-  line-height: .7;
-  font-weight: 400;
+  &--card-light {
+    font-size: 1rem;
+    line-height: .7;
+    font-weight: 400;
   }
 
-  &--inverted{
+  &--inverted {
     color: #FFF;
   }
 
   &--small {
     font-size: 1.2rem;
+
     @mixin atSmall {
       font-size: 1.475rem;
     }
   }
 
-&--light{
-  font-size: 1.5rem;
-  line-height: 1;
-  font-weight: 300;
+  &--light {
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 300;
   }
 
   strong {
@@ -73,7 +76,7 @@
   }
 
   &--t-margin {
-    margin-top:20px;
+    margin-top: 20px;
   }
 
   &--no-t-margin {
@@ -85,15 +88,15 @@
   }
 
   &__divider {
-        height: 5px;
-        background-color: #FFF;
-        width: 90%;
-         margin-top: 20px;
-        margin-bottom: 20px;
-    }
+    height: 5px;
+    background-color: #FFF;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
   &__divider--blue {
     background-color: $mainBlue;
     height: 2px;
-    }
+  }
 }
