@@ -23,12 +23,8 @@ ul {
   padding:0;
 }
 
-hr {
-  height: 5px;
-}
-
 p {
     font-size: 1rem;
-    line-height: 1.2;
-    margin: 0;
+    line-height: 1.3;
 }
+

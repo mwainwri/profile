@@ -2,11 +2,11 @@
 Instead edit gulp/templates/sprite */
 
     .icon {
-      background-image: url('../../assets/images/sprites/sprite-4fc3667b.svg');
+      background-image: url('../../assets/images/sprites/sprite-a88fd6a0.svg');
     }
 
   .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
   }
 
   .icon--alignable {
@@ -16,7 +16,17 @@ Instead edit gulp/templates/sprite */
   }
 
   .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
+  }
+
+  .icon--alignable-small {
+    width: 47px;
+    height: 47px;
+    background-position: 34.02061855670103% 83.99180327868852%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
   }
 
   .icon--behance {
@@ -26,17 +36,17 @@ Instead edit gulp/templates/sprite */
   }
 
   .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
   }
 
   .icon--facebook {
     width: 23.23px;
     height: 44.01px;
-    background-position: 30.307204849152775% 81.98255860468836%;
+    background-position: 51.88960830233733% 81.98255860468836%;
   }
 
   .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
   }
 
   .icon--facebook_info {
@@ -46,7 +56,7 @@ Instead edit gulp/templates/sprite */
   }
 
   .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
   }
 
   .icon--linkedin {
@@ -56,7 +66,7 @@ Instead edit gulp/templates/sprite */
   }
 
   .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
   }
 
   .icon--mail {
@@ -66,7 +76,7 @@ Instead edit gulp/templates/sprite */
   }
 
   .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
   }
 
   .icon--star {
@@ -76,11 +86,11 @@ Instead edit gulp/templates/sprite */
   }
 
   .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-4fc3667b.png');
+     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
   }
 
   .icon--youtube {
     width: 36.75px;
     height: 44px;
-    background-position: 43.686658506731945% 81.976%;
+    background-position: 66.69767441860465% 81.976%;
   }

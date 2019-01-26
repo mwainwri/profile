@@ -1,2 +1,10 @@
 .site-header{
+    display: none;
+    
+    @mixin atMedium {
+        margin: 5px auto;
+        padding: 5px;
+        max-width: 600px;
+        display: block;
+    }
 }

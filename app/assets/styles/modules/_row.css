@@ -1,6 +1,5 @@
 .row {
 
-  @mixin clearfix;
 
   &--t-padding {
     padding-top: 80px;
@@ -62,11 +61,7 @@
     &__medium-8--smaller {
       width: 63%;
     }
-
-  }
-
-  @mixin atLarge {
-    &__tab-content-left{
+ &__tab-content-left{
       float: left;
       width:50%;
     }
@@ -74,7 +69,15 @@
        float: right;
         width:50%;
     }
+    &__tap-content-full-width {
+      float: none;
+      width: 100%;
+    }
+  }
+   
 
+  @mixin atLarge {
+  
     &__b-margin-until-large {
       margin-bottom: 0;
     }
@@ -84,6 +87,9 @@
       width: 33.33%;
     }
 
+  &__large-4--smaller {
+      width: 30%;
+    }
     &__large-4--larger {
       width: 37%;
     }

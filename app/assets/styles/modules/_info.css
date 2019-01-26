@@ -1,35 +1,59 @@
 .info {
-    margin: 18px;
-    margin-bottom: 100px;
-    padding: 25px;
     background-color: $mainBlue;
-    max-width:400px;
+    width: 100%;
+    &__profile-link{
+        display: none;
+
+    }
 
     @mixin atLarge{
         min-height: 1037px;
+        max-width:400px;
+        margin: 18px;
+        margin-bottom: 100px;
+        padding: 25px;
+
+         &__profile-link{
+            display: block; 
+            text-align: center;
+        }
+
     }
 
     &__general-container{
         padding: 15px;
-    }
-
-    &__divider {
-        color: #FFF;
-        background-color: #FFF;
-        width: 80%;
-         margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
     }
 
     &__photo-container{
-        background-color: $subBlue;
-        margin: 18px auto;
-        width: 320px;
-        height: auto;
+        overflow: hidden;
+        width: 100%;
+        margin: 35px auto 0 auto;
+        @mixin atMedium{
+            border-radius: 100%;
+            width: 100%;
+        }
+        @mixin atLarge{
+            margin: 18px auto;
+            width: 100%;
+           
+        }
     }
 
-   &__profile-link{
-       margin-top: 48px;
-    text-align: center;
+   &__photo {
+       background-color: $subBlue;
+    display: block;
+    border-radius: 100%;
+    max-width: 320px;
+    width: 95%;
+    height: 95%;
+    margin: 35px auto 0 auto;
+    border: 6px solid rgba(#DAEEFF, .8);
+  }
+
+   &--responsive-visible {
+       display: block;
    }
 }
