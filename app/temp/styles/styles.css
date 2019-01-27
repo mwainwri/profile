@@ -478,6 +478,10 @@ ul {
   padding:0;
 }
 
+ul--bullets {
+   list-style-type: bullet;
+}
+
 p {
     font-size: 1rem;
     line-height: 1.3;
