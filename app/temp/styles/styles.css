@@ -811,10 +811,12 @@ p {
     .row__medium-8--smaller {
       width: 63%;
     }
+
  .row__tab-content-left{
       float: left;
       width:50%;
     }
+
     .row__tab-content-right{
        float: right;
         width:50%;
@@ -1313,6 +1315,7 @@ Instead edit gulp/templates/sprite */
 
 .tabs__card-content {
         padding: 20px;
+        z-index: 2;
     }
 
 .tabs__card-content::after {
@@ -1320,3 +1323,11 @@ Instead edit gulp/templates/sprite */
     clear: both;
     display: table;
   }
+
+.tabs__index {
+        max-width: 600px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto
+    }

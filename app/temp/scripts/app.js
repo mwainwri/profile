@@ -11335,7 +11335,7 @@ var Tabs = function () {
     function Tabs() {
         _classCallCheck(this, Tabs);
 
-        this.tabLinks = (0, _jquery2.default)('ul.tabs__tab-links-wrapper li');
+        this.tabLinks = (0, _jquery2.default)('.tabs__tab-links');
         this.tabContent = (0, _jquery2.default)('.tabs__content');
         this.tabDrawers = (0, _jquery2.default)('.tabs__tab_drawer');
         this.events();
@@ -11345,26 +11345,29 @@ var Tabs = function () {
         key: 'events',
         value: function events() {
             this.tabLinks.click(this.currentTab);
-            this.tabDrawers.click(this.currentTab);
+            //this.tabDrawers.click(this.currentTab);
         }
     }, {
         key: 'currentTab',
         value: function currentTab() {
-            var current_tab_link_id = this.id;
-            var current_tab_content_id = (0, _jquery2.default)('#' + current_tab_link_id).attr('data-tab');
+            function ClearActiveTabs() {
+                var allTabLinks = (0, _jquery2.default)('.tabs__tab-links');
+                var allTabContnet = (0, _jquery2.default)('.tabs__content');
+                allTabLinks.removeClass('tabs--current-link');
+                allTabContnet.removeClass('tabs--current-tab');
+            }
+            var activeLink = (0, _jquery2.default)(this);
+            var current_tab_content_id = activeLink.attr('data-tab');
+            var activeContent = (0, _jquery2.default)('#' + current_tab_content_id);
 
-            var active_link = (0, _jquery2.default)('#' + current_tab_link_id);
-            var active_content = (0, _jquery2.default)('#' + current_tab_content_id);
-
-            if (active_link.hasClass('tabs--current-link')) {
-                if (active_link.hasClass('tabs__tab_drawer')) {
-                    active_link.removeClass('tabs--current-link');
-                    active_content.removeClass('tabs--current-tab');
+            if (activeLink.hasClass('tabs--current-link')) {
+                if (activeLink.hasClass('tabs__tab_drawer')) {
+                    ClearActiveTabs();
                 }
             } else {
-                active_link.addClass('tabs--current-link').siblings().removeClass('tabs--current-link');
-                active_content.addClass('tabs--current-tab').siblings().removeClass('tabs--current-tab');
-                console.log(active_content.siblings());
+                ClearActiveTabs();
+                activeLink.addClass('tabs--current-link');
+                activeContent.addClass('tabs--current-tab');
             }
         }
     }]);

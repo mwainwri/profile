@@ -137,5 +137,14 @@
     &__card-content {
         @mixin clearfix;
         padding: 20px;
+        z-index: 2;
+    }
+
+    &__index {
+        max-width: 600px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto
     }
 }
