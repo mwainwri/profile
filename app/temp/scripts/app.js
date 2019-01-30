@@ -11344,7 +11344,6 @@ var Tabs = function () {
     _createClass(Tabs, [{
         key: 'events',
         value: function events() {
-            //$(this.element).on('keypress.mynamespace', this.searchKeyPressed.bind(this));
             this.tabLinks.click(this.currentTab.bind(this.tabLinks, this.tabContent));
         }
     }, {
@@ -11353,7 +11352,6 @@ var Tabs = function () {
             var activeLink = (0, _jquery2.default)(b.target);
             var allTabLinks = this;
             var allContentTabs = (0, _jquery2.default)(a);
-            console.log(allTabLinks);
 
             function ClearActiveTabs() {
                 allTabLinks.removeClass('tabs--current-link');

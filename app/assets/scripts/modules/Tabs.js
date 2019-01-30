@@ -8,18 +8,15 @@ class Tabs {
         this.events();
     }
 
-
     events() {
-        //$(this.element).on('keypress.mynamespace', this.searchKeyPressed.bind(this));
         this.tabLinks.click(this.currentTab.bind(this.tabLinks, this.tabContent));
     }
+
 
     currentTab(a, b) {
         var activeLink = $(b.target);
         var allTabLinks = this;
         var allContentTabs = $(a);
-        console.log(allTabLinks);
-
 
         function ClearActiveTabs() {
             allTabLinks.removeClass('tabs--current-link');
@@ -43,6 +40,7 @@ class Tabs {
             activeContent.addClass('tabs--current-tab');
 
             activeLink.get(0).scrollIntoView();
+
         }
     }
 }
