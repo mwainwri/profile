@@ -10,38 +10,39 @@ class Tabs {
 
 
     events() {
-        this.tabLinks.click(this.currentTab);
+        //$(this.element).on('keypress.mynamespace', this.searchKeyPressed.bind(this));
+        this.tabLinks.click(this.currentTab.bind(this.tabLinks, this.tabContent));
     }
 
-    currentTab() {
+    currentTab(a, b) {
+        var activeLink = $(b.target);
+        var allTabLinks = this;
+        var allContentTabs = $(a);
+        console.log(allTabLinks);
 
 
-       function ClearActiveTabs() {
-            var allTabLinks = $('.tabs__tab-links');
-            var allTabContnet = $('.tabs__content');
+        function ClearActiveTabs() {
             allTabLinks.removeClass('tabs--current-link');
-            allTabContnet.removeClass('tabs--current-tab');
+            allContentTabs.removeClass('tabs--current-tab');
         }
 
-        var activeLink = $(this);
-        var current_tab_content_id = activeLink.attr('data-tab');
-        var activeContent = $('#' + current_tab_content_id);
+        var currentTabContentId = activeLink.attr('data-tab');
+        var activeContent = $('#' + currentTabContentId);
 
         if (activeLink.hasClass('tabs--current-link')) {
             if (activeLink.hasClass('tabs__tab_drawer')) {
                 ClearActiveTabs();
             }
         } else {
-            ClearActiveTabs();
             var syncLinkValue = activeLink.attr('data-link');
-           
-            
-            var matchingActiveLinks =  $( "[data-link=" + syncLinkValue + "]" );
+            var matchingActiveLinks = $("[data-link=" + syncLinkValue + "]");
+
+            ClearActiveTabs();
+
             matchingActiveLinks.addClass('tabs--current-link');
-            console.log(matchingActiveLinks);
-            
-            //activeLink.addClass('tabs--current-link');
             activeContent.addClass('tabs--current-tab');
+
+            activeLink.get(0).scrollIntoView();
         }
     }
 }

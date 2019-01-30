@@ -11344,37 +11344,39 @@ var Tabs = function () {
     _createClass(Tabs, [{
         key: 'events',
         value: function events() {
-            this.tabLinks.click(this.currentTab);
+            //$(this.element).on('keypress.mynamespace', this.searchKeyPressed.bind(this));
+            this.tabLinks.click(this.currentTab.bind(this.tabLinks, this.tabContent));
         }
     }, {
         key: 'currentTab',
-        value: function currentTab() {
+        value: function currentTab(a, b) {
+            var activeLink = (0, _jquery2.default)(b.target);
+            var allTabLinks = this;
+            var allContentTabs = (0, _jquery2.default)(a);
+            console.log(allTabLinks);
 
             function ClearActiveTabs() {
-                var allTabLinks = (0, _jquery2.default)('.tabs__tab-links');
-                var allTabContnet = (0, _jquery2.default)('.tabs__content');
                 allTabLinks.removeClass('tabs--current-link');
-                allTabContnet.removeClass('tabs--current-tab');
+                allContentTabs.removeClass('tabs--current-tab');
             }
 
-            var activeLink = (0, _jquery2.default)(this);
-            var current_tab_content_id = activeLink.attr('data-tab');
-            var activeContent = (0, _jquery2.default)('#' + current_tab_content_id);
+            var currentTabContentId = activeLink.attr('data-tab');
+            var activeContent = (0, _jquery2.default)('#' + currentTabContentId);
 
             if (activeLink.hasClass('tabs--current-link')) {
                 if (activeLink.hasClass('tabs__tab_drawer')) {
                     ClearActiveTabs();
                 }
             } else {
-                ClearActiveTabs();
                 var syncLinkValue = activeLink.attr('data-link');
-
                 var matchingActiveLinks = (0, _jquery2.default)("[data-link=" + syncLinkValue + "]");
-                matchingActiveLinks.addClass('tabs--current-link');
-                console.log(matchingActiveLinks);
 
-                //activeLink.addClass('tabs--current-link');
+                ClearActiveTabs();
+
+                matchingActiveLinks.addClass('tabs--current-link');
                 activeContent.addClass('tabs--current-tab');
+
+                activeLink.get(0).scrollIntoView();
             }
         }
     }]);
