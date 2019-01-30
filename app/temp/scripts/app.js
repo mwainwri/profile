@@ -11345,17 +11345,18 @@ var Tabs = function () {
         key: 'events',
         value: function events() {
             this.tabLinks.click(this.currentTab);
-            //this.tabDrawers.click(this.currentTab);
         }
     }, {
         key: 'currentTab',
         value: function currentTab() {
+
             function ClearActiveTabs() {
                 var allTabLinks = (0, _jquery2.default)('.tabs__tab-links');
                 var allTabContnet = (0, _jquery2.default)('.tabs__content');
                 allTabLinks.removeClass('tabs--current-link');
                 allTabContnet.removeClass('tabs--current-tab');
             }
+
             var activeLink = (0, _jquery2.default)(this);
             var current_tab_content_id = activeLink.attr('data-tab');
             var activeContent = (0, _jquery2.default)('#' + current_tab_content_id);
@@ -11366,7 +11367,13 @@ var Tabs = function () {
                 }
             } else {
                 ClearActiveTabs();
-                activeLink.addClass('tabs--current-link');
+                var syncLinkValue = activeLink.attr('data-link');
+
+                var matchingActiveLinks = (0, _jquery2.default)("[data-link=" + syncLinkValue + "]");
+                matchingActiveLinks.addClass('tabs--current-link');
+                console.log(matchingActiveLinks);
+
+                //activeLink.addClass('tabs--current-link');
                 activeContent.addClass('tabs--current-tab');
             }
         }

@@ -11,16 +11,18 @@ class Tabs {
 
     events() {
         this.tabLinks.click(this.currentTab);
-        //this.tabDrawers.click(this.currentTab);
     }
 
     currentTab() {
-        function ClearActiveTabs() {
+
+
+       function ClearActiveTabs() {
             var allTabLinks = $('.tabs__tab-links');
             var allTabContnet = $('.tabs__content');
             allTabLinks.removeClass('tabs--current-link');
             allTabContnet.removeClass('tabs--current-tab');
         }
+
         var activeLink = $(this);
         var current_tab_content_id = activeLink.attr('data-tab');
         var activeContent = $('#' + current_tab_content_id);
@@ -31,7 +33,14 @@ class Tabs {
             }
         } else {
             ClearActiveTabs();
-            activeLink.addClass('tabs--current-link');
+            var syncLinkValue = activeLink.attr('data-link');
+           
+            
+            var matchingActiveLinks =  $( "[data-link=" + syncLinkValue + "]" );
+            matchingActiveLinks.addClass('tabs--current-link');
+            console.log(matchingActiveLinks);
+            
+            //activeLink.addClass('tabs--current-link');
             activeContent.addClass('tabs--current-tab');
         }
     }
