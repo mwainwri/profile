@@ -3,6 +3,7 @@
     min-width: 300px;
     max-width: 600px;
     margin: 35px auto;
+    position: relative;
 
 
     &__tab-links-wrapper {
@@ -69,6 +70,7 @@
     &__content {
 
         color: $mainBlue;
+        background-color: white;
         margin-top: -1px;
         border-style: solid;
         height: 0;
@@ -137,5 +139,22 @@
     &__card-content {
         @mixin clearfix;
         padding: 20px;
+    }
+
+
+    &__index {
+        color: $mainBlue;
+        max-width: 600px;
+        margin: auto;
+        display: none;
+
+        @mixin atMedium {
+            position: absolute;
+            top: 45px;
+            left: 0;
+            right: 0;
+            display: block;
+            min-height: 50px;
+        }
     }
 }

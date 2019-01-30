@@ -32,7 +32,7 @@
   &__b-margin-until-medium {
     margin-bottom: 1rem;
   }
-
+    
   @mixin atMedium {
 
     &__b-margin-until-medium {
@@ -61,10 +61,12 @@
     &__medium-8--smaller {
       width: 63%;
     }
+
  &__tab-content-left{
       float: left;
       width:50%;
     }
+
     &__tab-content-right{
        float: right;
         width:50%;

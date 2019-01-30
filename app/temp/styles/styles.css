@@ -811,10 +811,12 @@ p {
     .row__medium-8--smaller {
       width: 63%;
     }
+
  .row__tab-content-left{
       float: left;
       width:50%;
     }
+
     .row__tab-content-right{
        float: right;
         width:50%;
@@ -1145,6 +1147,7 @@ Instead edit gulp/templates/sprite */
     min-width: 300px;
     max-width: 600px;
     margin: 35px auto;
+    position: relative;
 }
 
 .tabs::after {
@@ -1230,6 +1233,7 @@ Instead edit gulp/templates/sprite */
 .tabs__content {
 
         color: #47657F;
+        background-color: white;
         margin-top: -1px;
         border-style: solid;
         height: 0;
@@ -1319,4 +1323,23 @@ Instead edit gulp/templates/sprite */
     content: "";
     clear: both;
     display: table;
+  }
+
+.tabs__index {
+        color: #47657F;
+        max-width: 600px;
+        margin: auto;
+        display: none;
+    }
+
+@media (min-width: 800px) {
+
+.tabs__index {
+            position: absolute;
+            top: 45px;
+            left: 0;
+            right: 0;
+            display: block;
+            min-height: 50px
+    }
   }
