@@ -38,9 +38,10 @@ class Tabs {
 
             matchingActiveLinks.addClass('tabs--current-link');
             activeContent.addClass('tabs--current-tab');
-
-            activeLink.get(0).scrollIntoView();
-
+            
+            if (activeLink.hasClass('tabs__tab_drawer')) {
+                activeLink.get(0).scrollIntoView();
+            }
         }
     }
 }
