@@ -135,6 +135,9 @@
         color: $mainBlue;
         line-height: 1.8;
     }
+    &--card-link-bullet-points {
+         list-style-type: disc;
+    }
 
     &__card-content {
         @mixin clearfix;

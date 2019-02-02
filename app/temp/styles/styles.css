@@ -1315,6 +1315,10 @@ Instead edit gulp/templates/sprite */
         line-height: 1.8;
     }
 
+.tabs--card-link-bullet-points {
+         list-style-type: disc;
+    }
+
 .tabs__card-content {
         padding: 20px;
     }
