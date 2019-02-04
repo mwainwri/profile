@@ -722,6 +722,10 @@ p {
     margin-bottom: .5em;
   }
 
+.headline--t-margin-small {
+    margin-top: .5em;
+  }
+
 .headline--b-margin-large {
     margin-bottom: 1.6em;
   }
@@ -732,6 +736,10 @@ p {
 
 .headline--no-t-margin {
     margin-top: 0;
+  }
+
+.headline--no-b-margin {
+    margin-bottom: 0;
   }
 
 .headline--no-margin {
@@ -1071,7 +1079,7 @@ Instead edit gulp/templates/sprite */
 
 .modal__inner {
         position: absolute;
-        width: 100%;
+        width: 90%;
         top: 50%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
@@ -1258,6 +1266,14 @@ Instead edit gulp/templates/sprite */
     }
   }
 
+.tabs__content ul {
+        margin-top: 0;
+        padding: 5px;
+        margin-left: 15px;
+        text-align: left;
+        list-style-type: disc;
+    }
+
 .tabs--current-tab {
 
         visiblity: visible;
@@ -1292,7 +1308,7 @@ Instead edit gulp/templates/sprite */
 
 .tabs__card-header {
         background-color: #BFD0DF;
-        padding: 5px 10px 5px 10px;
+        padding: 5px 20px 5px 20px;
         width: 100%;
     }
 
@@ -1313,10 +1329,6 @@ Instead edit gulp/templates/sprite */
 .tabs--card-link-blue {
         color: #47657F;
         line-height: 1.8;
-    }
-
-.tabs--card-link-bullet-points {
-         list-style-type: disc;
     }
 
 .tabs__card-content {
