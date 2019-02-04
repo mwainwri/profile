@@ -71,6 +71,10 @@
     margin-bottom: .5em;
   }
 
+   &--t-margin-small {
+    margin-top: .5em;
+  }
+
   &--b-margin-large {
     margin-bottom: 1.6em;
   }
@@ -81,6 +85,11 @@
 
   &--no-t-margin {
     margin-top: 0;
+  }
+
+  
+  &--no-b-margin {
+    margin-bottom: 0;
   }
 
   &--no-margin {
