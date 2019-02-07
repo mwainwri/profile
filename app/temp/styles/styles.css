@@ -925,11 +925,11 @@ p {
 Instead edit gulp/templates/sprite */
 
 .icon {
-      background-image: url('../../assets/images/sprites/sprite-a88fd6a0.svg');
+      background-image: url('../../assets/images/sprites/icons/sprite-a88fd6a0.svg');
     }
 
 .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
+     background-image: url('../../assets/images/sprites/icons/sprite-a88fd6a0.png');
   }
 
 .icon--alignable {
@@ -939,7 +939,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
+     background-image: url('../../assets/images/sprites/icons/sprite-a88fd6a0.png');
   }
 
 .icon--alignable-small {
@@ -949,7 +949,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
+     background-image: url('../../assets/images/sprites/icons/sprite-a88fd6a0.png');
   }
 
 .icon--behance {
@@ -959,7 +959,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
+     background-image: url('../../assets/images/sprites/icons/sprite-a88fd6a0.png');
   }
 
 .icon--facebook {
@@ -969,7 +969,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
+     background-image: url('../../assets/images/sprites/icons/sprite-a88fd6a0.png');
   }
 
 .icon--facebook_info {
@@ -979,7 +979,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
+     background-image: url('../../assets/images/sprites/icons/sprite-a88fd6a0.png');
   }
 
 .icon--linkedin {
@@ -989,7 +989,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
+     background-image: url('../../assets/images/sprites/icons/sprite-a88fd6a0.png');
   }
 
 .icon--mail {
@@ -999,7 +999,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
+     background-image: url('../../assets/images/sprites/icons/sprite-a88fd6a0.png');
   }
 
 .icon--star {
@@ -1009,13 +1009,60 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon {
-     background-image: url('../../assets/images/sprites/sprite-a88fd6a0.png');
+     background-image: url('../../assets/images/sprites/icons/sprite-a88fd6a0.png');
   }
 
 .icon--youtube {
     width: 36.75px;
     height: 44px;
     background-position: 66.69767441860465% 81.976%;
+  }
+
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+
+.design {
+      background-image: url('../../assets/images/sprites/designs/design-sprite-c685f740.svg');
+    }
+
+.no-svg .design {
+     background-image: url('../../assets/images/sprites/designs/design-sprite-c685f740.png');
+  }
+
+.design--cherry-blossom-logo {
+    width: 352px;
+    height: 102.44px;
+    background-position: 0 0;
+  }
+
+.no-svg .design {
+     background-image: url('../../assets/images/sprites/designs/design-sprite-c685f740.png');
+  }
+
+.design--life-lessons-speaker-logo {
+    width: 352px;
+    height: 102.44px;
+    background-position: 0 49.83459817085036%;
+  }
+
+.no-svg .design {
+     background-image: url('../../assets/images/sprites/designs/design-sprite-c685f740.png');
+  }
+
+.design--rfdprint-logo {
+    width: 352px;
+    height: 102.44px;
+    background-position: 0 99.66919634170073%;
+  }
+
+.no-svg .design {
+     background-image: url('../../assets/images/sprites/designs/design-sprite-c685f740.png');
+  }
+
+.design--rlc-drywall-services-logo {
+    width: 352px;
+    height: 102.44px;
+    background-position: 100% 0;
   }
 
 .site-footer{
@@ -1054,14 +1101,14 @@ Instead edit gulp/templates/sprite */
 }
   }
 
-.modal{
+.modal {
     position: fixed;
     z-index: 5;
     background-color: rgba(255, 255, 255, .94);
     top: 0;
     bottom: 0;
     left: 0;
-    right:0;
+    right: 0;
     opacity: 0;
     visibility: hidden;
     -webkit-transform: scale(1.2);
@@ -1083,6 +1130,11 @@ Instead edit gulp/templates/sprite */
         top: 50%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
+
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
     }
 
 .modal__description {
@@ -1143,6 +1195,38 @@ Instead edit gulp/templates/sprite */
   }
 
 .social-icons__icon .icon {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+        }
+
+.portfolio {
+   
+    text-align: center;
+
+}
+
+.portfolio__design {
+        background-color: #BFD0DF;
+        display: inline-block;
+        margin: 10px 10px 0 0;
+        width: 100%;
+        height: 115px;
+        position: relative;
+    }
+
+@media (min-width: 530px) {
+
+.portfolio__design {
+            width: 33.33%;
+            margin: 0 10px 20px 10px
+    }
+  }
+
+.portfolio__design .design {
             display: block;
             position: absolute;
             top: 50%;
