@@ -3,16 +3,16 @@ Instead edit gulp/templates/sprite */
 
 {{#shapes}}
   {{#first}}
-    .icon {
-      background-image: url('../../assets/images/sprites/icons/{{{sprite}}}');
+    .design {
+      background-image: url('../../assets/images/sprites/designs/{{{sprite}}}');
     }
   {{/first}}
 
-  .no-svg .icon {
-     background-image: url('../../assets/images/sprites/icons/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
+  .no-svg .design {
+     background-image: url('../../assets/images/sprites/designs/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
   }
 
-  .icon--{{base}} {
+  .design--{{base}} {
     width: {{width.outer}}px;
     height: {{height.outer}}px;
     background-position: {{position.relative.xy}};
