@@ -10350,6 +10350,10 @@ var _Tabs = __webpack_require__(6);
 
 var _Tabs2 = _interopRequireDefault(_Tabs);
 
+var _ContactForm = __webpack_require__(7);
+
+var _ContactForm2 = _interopRequireDefault(_ContactForm);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //import React from 'react';
@@ -10358,6 +10362,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 
 var tabs = new _Tabs2.default();
+var contactForm = new _ContactForm2.default();
 var mobileMenu = new _MobileMenu2.default();
 new _RevealOnScroll2.default((0, _jquery2.default)(".feature-item"), "85%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".testimonial"), "60%");
@@ -11385,6 +11390,97 @@ var Tabs = function () {
 }();
 
 exports.default = Tabs;
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ContactForm = function () {
+  function ContactForm() {
+    _classCallCheck(this, ContactForm);
+
+    this.thecode();
+  }
+
+  _createClass(ContactForm, [{
+    key: 'thecode',
+    value: function thecode() {
+      var form = (0, _jquery2.default)('#form'),
+          email = (0, _jquery2.default)('#email'),
+          subject = (0, _jquery2.default)('#subject'),
+          message = (0, _jquery2.default)('#message'),
+          info = (0, _jquery2.default)('#info'),
+          submit = (0, _jquery2.default)("#submit");
+
+      form.on('input', '#email, #subject, #message', function () {
+        (0, _jquery2.default)(this).css('border-color', '');
+        info.html('').slideUp();
+      });
+
+      submit.on('click', function (e) {
+        e.preventDefault();
+        if (validate()) {
+          _jquery2.default.ajax({
+            type: "POST",
+            url: "mailer.php",
+            data: form.serialize(),
+            dataType: "json"
+          }).done(function (data) {
+            if (data.success) {
+              email.val('');
+              subject.val('');
+              message.val('');
+              info.html('Message sent!').css('color', 'green').slideDown();
+            } else {
+              info.html('Could not send mail! Sorry!').css('color', 'red').slideDown();
+            }
+          });
+        }
+      });
+
+      function validate() {
+        var valid = true;
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        if (!regex.test(email.val())) {
+          email.css('border-color', 'red');
+          valid = false;
+        }
+        if (_jquery2.default.trim(subject.val()) === "") {
+          subject.css('border-color', 'red');
+          valid = false;
+        }
+        if (_jquery2.default.trim(message.val()) === "") {
+          message.css('border-color', 'red');
+          valid = false;
+        }
+
+        return valid;
+      }
+    }
+  }]);
+
+  return ContactForm;
+}();
+
+exports.default = ContactForm;
 
 /***/ })
 /******/ ]);

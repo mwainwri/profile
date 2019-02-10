@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,20 +71,21 @@
 /* 4 */,
 /* 5 */,
 /* 6 */,
-/* 7 */
+/* 7 */,
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(8);
-
 __webpack_require__(9);
 
 __webpack_require__(10);
 
+__webpack_require__(11);
+
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/*! picturefill - v3.0.2 - 2016-02-12
@@ -1635,7 +1636,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*! picturefill - v3.0.2 - 2016-02-12
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports) {
 
 (function(window, factory) {
@@ -2338,7 +2339,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*! picturefill - v3.0.2 - 2016-02-12
 
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2569,6 +2570,30 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }
 
   ;
+  /*!
+  {
+    "name": "SVG",
+    "property": "svg",
+    "caniuse": "svg",
+    "tags": ["svg"],
+    "authors": ["Erik Dahlstrom"],
+    "polyfills": [
+      "svgweb",
+      "raphael",
+      "amplesdk",
+      "canvg",
+      "svg-boilerplate",
+      "sie",
+      "dojogfx",
+      "fabricjs"
+    ]
+  }
+  !*/
+  /* DOC
+  Detects support for SVG in `<embed>` or `<object>` elements.
+  */
+
+  Modernizr.addTest('svg', !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect);
 
   /**
    * If the browsers follow the spec, then they would expose vendor-specific styles as:
@@ -3138,31 +3163,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   */
 
   Modernizr.addTest('flexbox', testAllProps('flexBasis', '1px', true));
-
-  /*!
-  {
-    "name": "SVG",
-    "property": "svg",
-    "caniuse": "svg",
-    "tags": ["svg"],
-    "authors": ["Erik Dahlstrom"],
-    "polyfills": [
-      "svgweb",
-      "raphael",
-      "amplesdk",
-      "canvg",
-      "svg-boilerplate",
-      "sie",
-      "dojogfx",
-      "fabricjs"
-    ]
-  }
-  !*/
-  /* DOC
-  Detects support for SVG in `<embed>` or `<object>` elements.
-  */
-
-  Modernizr.addTest('svg', !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect);
 
   // Run each test
   testRunner();
