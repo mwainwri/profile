@@ -27,11 +27,13 @@ class Modal {
 
     openModal(){
         this.modal.addClass("modal--is-visible");
+        $("body").addClass("body-no-scroll");
         return false;
     }
 
     closeModal() {
         this.modal.removeClass("modal--is-visible");
+        $("body").removeClass("body-no-scroll");
     }
 }
 export default Modal;

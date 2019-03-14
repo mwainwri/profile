@@ -2,45 +2,45 @@
 Instead edit gulp/templates/sprite */
 
     .design {
-      background-image: url('../../assets/images/sprites/designs/design-sprite-c685f740.svg');
+      background-image: url('../../assets/images/sprites/designs/design-sprite-9a8ccd8c.svg');
     }
 
   .no-svg .design {
-     background-image: url('../../assets/images/sprites/designs/design-sprite-c685f740.png');
+     background-image: url('../../assets/images/sprites/designs/design-sprite-9a8ccd8c.png');
   }
 
   .design--cherry-blossom-logo {
-    width: 352px;
-    height: 102.44px;
+    width: 302px;
+    height: 102px;
     background-position: 0 0;
   }
 
   .no-svg .design {
-     background-image: url('../../assets/images/sprites/designs/design-sprite-c685f740.png');
+     background-image: url('../../assets/images/sprites/designs/design-sprite-9a8ccd8c.png');
   }
 
   .design--life-lessons-speaker-logo {
-    width: 352px;
-    height: 102.44px;
-    background-position: 0 49.83459817085036%;
+    width: 302px;
+    height: 102px;
+    background-position: 0 100%;
   }
 
   .no-svg .design {
-     background-image: url('../../assets/images/sprites/designs/design-sprite-c685f740.png');
+     background-image: url('../../assets/images/sprites/designs/design-sprite-9a8ccd8c.png');
   }
 
   .design--rfdprint-logo {
-    width: 352px;
-    height: 102.44px;
-    background-position: 0 99.66919634170073%;
+    width: 302px;
+    height: 102px;
+    background-position: 100% 0;
   }
 
   .no-svg .design {
-     background-image: url('../../assets/images/sprites/designs/design-sprite-c685f740.png');
+     background-image: url('../../assets/images/sprites/designs/design-sprite-9a8ccd8c.png');
   }
 
   .design--rlc-drywall-services-logo {
-    width: 352px;
-    height: 102.44px;
-    background-position: 100% 0;
+    width: 302px;
+    height: 102px;
+    background-position: 100% 100%;
   }

@@ -33,31 +33,34 @@ gulp.task('beginCleanDesigns', function() {
   return del(['./app/temp/designs/sprite', './app/assets/images/sprites/designs']);
 });
 
-gulp.task('createDesignSprite', ['beginCleanDesigns'], function() {
+gulp.task('createSVGDesignSprite', function() {
   return gulp.src('./app/assets/images/designs/**/*.svg')
     .pipe(svgSprite(config))
     .pipe(gulp.dest('./app/temp/designs/sprite/'));
 });
 
-gulp.task('createDesignPng', ['createDesignSprite'], function(){
+gulp.task('createPngDesignSprite', function(){
   return gulp.src('./app/temp/designs/sprite/css/*.svg')
   .pipe(svg2png())
   .pipe(gulp.dest('./app/temp/designs/sprite/css'));
 });
 
-gulp.task('copyDsignSPritGraphic', ['createDesignPng'], function() {
+gulp.task('copyDesignSprites', function() {
   return gulp.src('./app/temp/designs/sprite/css/**/*.{svg,png}')
     .pipe(gulp.dest('./app/assets/images/sprites/designs'));
 });
 
-gulp.task('copyDesignSprite', ['createDesignSprite'], function() {
+gulp.task('copyDesignSpriteCSS', function() {
   return gulp.src('./app/temp/designs/sprite/css/*.css')
     .pipe(rename('_design-sprite.css'))
     .pipe(gulp.dest('./app/assets/styles/modules'));
 });
 
-gulp.task('endCleanDesign', ['copyDsignSPritGraphic', 'copyDesignSprite'], function() {
+gulp.task('endCleanDesign', function() {
   return del('./app/temp/design/sprite');
 });
 
-gulp.task('designs', ['beginCleanDesigns', 'createDesignSprite', 'createDesignPng','copyDsignSPritGraphic', 'copyDesignSprite', 'endCleanDesign']);
+gulp.task('createDesigns', gulp.series(['createSVGDesignSprite', 'createPngDesignSprite']));
+gulp.task('copyDesigns', gulp.parallel(['copyDesignSprites', 'copyDesignSpriteCSS']));
+
+gulp.task('designs', gulp.series(['beginCleanDesigns', 'createDesigns', 'copyDesigns', 'endCleanDesign']));

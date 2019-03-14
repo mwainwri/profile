@@ -11296,12 +11296,14 @@ var Modal = function () {
         key: "openModal",
         value: function openModal() {
             this.modal.addClass("modal--is-visible");
+            (0, _jquery2.default)("body").addClass("body-no-scroll");
             return false;
         }
     }, {
         key: "closeModal",
         value: function closeModal() {
             this.modal.removeClass("modal--is-visible");
+            (0, _jquery2.default)("body").removeClass("body-no-scroll");
         }
     }]);
 

@@ -1,7 +1,7 @@
 .modal {
     position: fixed;
     z-index: 5;
-    background-color: rgba(255, 255, 255, .94);
+    background-color: rgba(255, 255, 255, .98);
     top: 0;
     bottom: 0;
     left: 0;
@@ -19,14 +19,26 @@
 
     &__inner {
         position: absolute;
-        width: 90%;
-        top: 50%;
-        transform: translateY(-50%);
-
+        overflow: auto;
+        top: 50px;
+        height: 100%;
+        max-width: 1236px;
+        width: 100%;
+       
         margin-left: auto;
         margin-right: auto;
         left: 0;
         right: 0;
+
+        @mixin atMedium {
+             padding:18px;
+            margin-top: 35px;
+            top: 50%;
+            transform: translateY(-50%);
+            overflow: hidden;
+        }
+
+
     }
 
     &__description {
@@ -52,4 +64,8 @@
 
         }
     }
+}
+
+.body-no-scroll {
+    overflow: hidden;
 }

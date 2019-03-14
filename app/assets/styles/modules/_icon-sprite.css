@@ -1,0 +1,106 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+
+    .icon {
+      background-image: url('../../assets/images/sprites/icons/icon-sprite-237e3c4f.svg');
+    }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-237e3c4f.png');
+  }
+
+  .icon--alignable {
+    width: 240.64px;
+    height: 52.47px;
+    background-position: 0 0;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-237e3c4f.png');
+  }
+
+  .icon--alignable-small {
+    width: 47px;
+    height: 47px;
+    background-position: 0 99.69005847953217%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-237e3c4f.png');
+  }
+
+  .icon--behance {
+    width: 47.05px;
+    height: 30.03px;
+    background-position: 45.84686774941996% 55.57801776879289%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-237e3c4f.png');
+  }
+
+  .icon--facebook {
+    width: 23.2px;
+    height: 32px;
+    background-position: 38.45270890725436% 91.65053763440861%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-237e3c4f.png');
+  }
+
+  .icon--facebook_info {
+    width: 22.92px;
+    height: 47.09px;
+    background-position: 30.26412325752018% 61.125738692879295%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-237e3c4f.png');
+  }
+
+  .icon--linkedin {
+    width: 31.6px;
+    height: 32px;
+    background-position: 51.07449856733524% 91.65053763440861%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-237e3c4f.png');
+  }
+
+  .icon--mail {
+    width: 66px;
+    height: 50px;
+    background-position: 86.85714285714286% 31.232142857142858%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-237e3c4f.png');
+  }
+
+  .icon--rfdprint-site-tag {
+    width: 152px;
+    height: 52px;
+    background-position: 0 31.60843373493976%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-237e3c4f.png');
+  }
+
+  .icon--star {
+    width: 66px;
+    height: 66px;
+    background-position: 0 68.73026315789474%;
+  }
+
+  .no-svg .icon {
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-237e3c4f.png');
+  }
+
+  .icon--youtube {
+    width: 36.75px;
+    height: 44px;
+    background-position: 23.011015911872704% 97.97126436781609%;
+  }
