@@ -1,0 +1,24 @@
+.testimonial {
+    color: $mainBlue;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 35px auto;
+
+    &__stars {
+        font-size: 2.5rem;
+    }
+
+    &__comments {
+        font-style: italic;
+    }
+
+    &__name {
+        font-weight: 700;
+        margin-top: 15px;
+    }
+
+    &__location {
+        margin-left: 10px;
+        font-weight: 400;
+    }
+}

@@ -8,7 +8,7 @@
 @import "modules/_headline";
 @import "modules/_row";
 @import "modules/_generic-content-container";
-@import "modules/_sprite";
+@import "modules/_icon-sprite";
 @import "modules/_design-sprite";
 @import "modules/_site-footer";
 @import "modules/_site-header";
@@ -16,3 +16,4 @@
 @import "modules/_social-icons";
 @import "modules/_portfolio";
 @import "modules/_tab-section";
+@import "modules/_testimonial";

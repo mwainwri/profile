@@ -1,9 +1,13 @@
 .portfolio {
-   
     text-align: center;
 
+    &__samples {
+        overflow: auto;
+        margin-top: 35px;
+    }
+
     &__design {
-        background-color: $subBlue;
+        background-size: 100% auto;
         display: inline-block;
         margin: 10px 10px 0 0;
         width: 100%;
@@ -11,8 +15,9 @@
         position: relative;
 
         @mixin atSmall {
-            width: 33.33%;
-            margin: 0 10px 20px 10px;
+            // width: 33.33%;
+            //margin: 0 10px 20px 10px;
+            margin: 0;
         }
 
         .design {

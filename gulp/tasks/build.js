@@ -16,11 +16,11 @@ gulp.task('previewDist', function() {
     });
 })
 
-gulp.task('deleteDistFolder', ['icons'], function() {
+gulp.task('deleteDocsFolder', function() {
     return del('./docs');
 })
 
-gulp.task('copyGeneralFiles', ['deleteDistFolder'], function(){
+gulp.task('copyGeneralFiles', function(){
     var pathsToCopy = [
         './app/**/*',
         '!./app/index.html',
@@ -28,14 +28,24 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function(){
         '!./app/assets/styles/**',
         '!./app/assets/scripts/**',
         '!./app/temp',
-        '!./app/temp/**'
+        '!./app/temp/**',
+        '!./app/plugins',
+        '!./app/plugins/**',
     ]
     return gulp.src(pathsToCopy)
     .pipe(gulp.dest("./docs"));
 })
 
-gulp.task('optimizeImages', ['deleteDistFolder'], function() {
-    return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/icons', '!./app/assets/images/icons/**/*'])
+gulp.task('optimizeImages', function() {
+
+    var filesToOptimize = [
+        './app/assets/images/**/*',
+        '!./app/assets/images/icons',
+        '!./app/assets/images/icons/**/*',
+        '!./app/assets/images/designs',
+        '!./app/assets/images/designs/**/*'
+    ]
+    return gulp.src(filesToOptimize)
     .pipe(imagemin({
         progressive: true,
         interlaced: true,
@@ -44,11 +54,7 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function() {
     .pipe(gulp.dest("./docs/assets/images"));
 })
 
-gulp.task('useminTrigger', ['deleteDistFolder'], function() {
-    gulp.start("usemin");
-})
-
-gulp.task('usemin', ['styles','scripts'], function(){
+gulp.task('usemin', function(){
     return gulp.src('./app/index.html')
     .pipe(usemin({
         css: [function() {return rev()}, function() {return cssnano()}],
@@ -57,4 +63,4 @@ gulp.task('usemin', ['styles','scripts'], function(){
     .pipe(gulp.dest("./docs"));
 })
 
-gulp.task('build', ['deleteDistFolder','copyGeneralFiles','optimizeImages', 'useminTrigger']);
+gulp.task('build', gulp.series(['icons','deleteDocsFolder','copyGeneralFiles','optimizeImages', 'styles','optimizeScripts','usemin']));

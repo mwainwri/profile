@@ -1,4 +1,4 @@
-.site-footer{
+.site-footer {
     background-color: $mainBlue;
     color: #FFF;
     padding: .5rem 0;
@@ -7,12 +7,25 @@
     &__text {
         display: block;
         margin-bottom: 1rem;
-        font-weight: 200; 
+        font-weight: 200;
 
         @mixin atMedium {
             display: inline;
             margin-bottom: 0;
             margin-right: 1.4rem;
         }
+    }
+
+    &__tag-text {
+        width: 150px;
+    }
+
+    &__tag-icon {
+        display: inline-block;
+        margin: 0;
+        width: 150px;
+        height: 80px;
+        position: relative;
+
     }
 }

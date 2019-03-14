@@ -51,6 +51,7 @@
         border-width: 1px;
         background-color: $subBlue;
         padding: 10px;
+        cursor: pointer;
 
         @mixin atMedium {
             float: left;
