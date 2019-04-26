@@ -15,4 +15,3 @@ new RevealOnScroll($(".feature-item"), "85%");
 new RevealOnScroll($(".testimonial"), "60%");
 var modal = new Modal();
 //var youtube = new  ReactYouTube();
-
