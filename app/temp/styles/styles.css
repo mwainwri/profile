@@ -1286,7 +1286,6 @@ Instead edit gulp/templates/sprite */
 }
 
 .portfolio__samples {
-        overflow: auto;
         margin-top: 35px;
     }
 

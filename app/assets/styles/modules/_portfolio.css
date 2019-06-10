@@ -2,7 +2,6 @@
     text-align: center;
 
     &__samples {
-        overflow: auto;
         margin-top: 35px;
     }
 
@@ -10,7 +9,8 @@
         background-size: 100% auto;
         display: inline-block;
         margin: 10px 10px 0 0;
-
+        width: 100%;
+        height: 115px;
         position: relative;
 
         @mixin atSmall {
