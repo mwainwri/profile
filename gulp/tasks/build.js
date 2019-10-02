@@ -3,7 +3,8 @@ var gulp = require('gulp'),
 	del = require('del'),
 	usemin = require('gulp-usemin'),
 	rev = require('gulp-rev'),
-	cssnano = require('gulp-cssnano'),
+	/*cssnano = require('gulp-cssnano'),*/
+	cleancss = require('gulp-clean-css'),
 	uglify = require('gulp-uglify'),
 	browserSync = require('browser-sync').create();
 
@@ -60,7 +61,9 @@ gulp.task('usemin', function() {
 			css: [function() {
 				return rev()
 			}, function() {
-				return cssnano()
+				return cleancss({
+					compatibility: 'ie8'
+				})
 			}],
 			js: [function() {
 				return rev()
