@@ -805,6 +805,7 @@ p {
 @media (min-width: 800px) {
 
 .flexbox .row--equal-height-at-medium {
+      display: -webkit-box;
       display: flex
 
   }
@@ -812,12 +813,14 @@ p {
 
 .flexbox .row--equal-height-at-medium > div {
       float: none;
+      display: -webkit-box;
       display: flex;
     }
 
 @media (min-width: 1010px) {
 
 .flexbox .row--equal-height-at-large {
+      display: -webkit-box;
       display: flex
 
   }
@@ -825,6 +828,7 @@ p {
 
 .flexbox .row--equal-height-at-large > div {
       float: none;
+      display: -webkit-box;
       display: flex;
     }
 
@@ -1058,14 +1062,17 @@ Instead edit gulp/templates/sprite */
     right: 0;
     opacity: 0;
     visibility: hidden;
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
 }
 
 .modal--is-visible {
         opacity: 1;
         visibility: visible;
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 
 .modal__inner {
@@ -1090,7 +1097,8 @@ Instead edit gulp/templates/sprite */
              padding:18px;
             margin-top: 35px;
             top: 50%;
-            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
             overflow: hidden
 
 
@@ -1110,8 +1118,10 @@ Instead edit gulp/templates/sprite */
         top: 15px;
         right: 15px;
         font-size: 2rem;
-        transform: scaleX(1.2);
-        transform-origin: 100% 0;
+        -webkit-transform: scaleX(1.2);
+                transform: scaleX(1.2);
+        -webkit-transform-origin: 100% 0;
+                transform-origin: 100% 0;
         color: #47657F;
         cursor: pointer;
     }
@@ -1160,7 +1170,8 @@ Instead edit gulp/templates/sprite */
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
         }
 
 .portfolio {
@@ -1195,7 +1206,8 @@ Instead edit gulp/templates/sprite */
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
         }
 
 .tabs {
@@ -1295,9 +1307,13 @@ Instead edit gulp/templates/sprite */
         height: 0;
         padding: 0;
 
-        transform-origin: 50% 0;
+        -webkit-transform-origin: 50% 0;
+
+                transform-origin: 50% 0;
+        -webkit-transition: all .5s, height 3s ease-out;
         transition: all .5s, height 3s ease-out;
-        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+                transform: scaleY(0);
     }
 
 @media (min-width: 800px) {
@@ -1322,7 +1338,8 @@ Instead edit gulp/templates/sprite */
 
         visiblity: visible;
         opacity: 1;
-        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
         margin-bottom: 10px;
         height: auto;
     }
