@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "..\\git-training-site"
+		},
+		{
+			"path": "..\\react websites\\seal-deal-finder"
 		}
 	],
 	"settings": {}
