@@ -411,11 +411,11 @@ p {
         max-width:400px;
         margin: 18px;
         margin-bottom: 100px;
-        padding: 25px
-}
+        padding: 25px;
+  }
 
          .info__profile-link{
-            display: block; 
+            display: block;
             text-align: center;
         }
   }
@@ -457,7 +457,7 @@ p {
     width: 95%;
     height: 95%;
     margin: 35px auto 0 auto;
-    border: 6px solid rgba(218,238,255, .8);
+    border: 6px solid #bfd0df;
   }
 
 .info--responsive-visible {
@@ -569,7 +569,7 @@ p {
 @media (min-width: 530px) {
 
 .headline {
-    font-size: 2.875rem
+    font-size: 2.875rem;
 }
   }
 
@@ -580,7 +580,7 @@ p {
 .headline--background {
     background-color: rgba(255, 255, 255, .94);
     padding: 10px;
-    
+
   }
 
 .headline--centered {
@@ -768,7 +768,7 @@ p {
   }
 
 @media (min-width: 1010px) {
-  
+
     .row__b-margin-until-large {
       margin-bottom: 0;
     }
@@ -805,30 +805,26 @@ p {
 @media (min-width: 800px) {
 
 .flexbox .row--equal-height-at-medium {
-      display: -webkit-box;
-      display: flex
+      display: flex;
 
   }
   }
 
 .flexbox .row--equal-height-at-medium > div {
       float: none;
-      display: -webkit-box;
       display: flex;
     }
 
 @media (min-width: 1010px) {
 
 .flexbox .row--equal-height-at-large {
-      display: -webkit-box;
-      display: flex
+      display: flex;
 
   }
   }
 
 .flexbox .row--equal-height-at-large > div {
       float: none;
-      display: -webkit-box;
       display: flex;
     }
 
@@ -853,11 +849,11 @@ p {
 Instead edit gulp/templates/sprite */
 
 .icon {
-      background-image: url('../../assets/images/sprites/icons/icon-sprite-8457844c.svg');
+      background-image: url('../../assets/images/sprites/icons/icon-sprite-13a20951.svg');
     }
 
 .no-svg .icon  {
-     background-image: url('../../assets/images/sprites/icons/icon-sprite-8457844c.png');
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-13a20951.png');
   }
 
 .icon--alignable {
@@ -867,7 +863,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon  {
-     background-image: url('../../assets/images/sprites/icons/icon-sprite-8457844c.png');
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-13a20951.png');
   }
 
 .icon--alignable-small {
@@ -877,7 +873,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon  {
-     background-image: url('../../assets/images/sprites/icons/icon-sprite-8457844c.png');
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-13a20951.png');
   }
 
 .icon--behance {
@@ -887,7 +883,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon  {
-     background-image: url('../../assets/images/sprites/icons/icon-sprite-8457844c.png');
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-13a20951.png');
   }
 
 .icon--facebook {
@@ -897,7 +893,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon  {
-     background-image: url('../../assets/images/sprites/icons/icon-sprite-8457844c.png');
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-13a20951.png');
   }
 
 .icon--facebook_info {
@@ -907,7 +903,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon  {
-     background-image: url('../../assets/images/sprites/icons/icon-sprite-8457844c.png');
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-13a20951.png');
   }
 
 .icon--linkedin {
@@ -917,7 +913,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon  {
-     background-image: url('../../assets/images/sprites/icons/icon-sprite-8457844c.png');
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-13a20951.png');
   }
 
 .icon--mail {
@@ -927,7 +923,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon  {
-     background-image: url('../../assets/images/sprites/icons/icon-sprite-8457844c.png');
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-13a20951.png');
   }
 
 .icon--rfdprint-site-tag {
@@ -937,7 +933,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon  {
-     background-image: url('../../assets/images/sprites/icons/icon-sprite-8457844c.png');
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-13a20951.png');
   }
 
 .icon--star {
@@ -947,7 +943,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .icon  {
-     background-image: url('../../assets/images/sprites/icons/icon-sprite-8457844c.png');
+     background-image: url('../../assets/images/sprites/icons/icon-sprite-13a20951.png');
   }
 
 .icon--youtube {
@@ -960,11 +956,11 @@ Instead edit gulp/templates/sprite */
 Instead edit gulp/templates/sprite */
 
 .design {
-      background-image: url('../../assets/images/sprites/designs/design-sprite-f74e73c1.svg');
+      background-image: url('../../assets/images/sprites/designs/design-sprite-e059e586.svg');
     }
 
 .no-svg .design {
-     background-image: url('../../assets/images/sprites/designs/design-sprite-f74e73c1.png');
+     background-image: url('../../assets/images/sprites/designs/design-sprite-e059e586.png');
   }
 
 .design--cherry-blossom-logo {
@@ -974,7 +970,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .design {
-     background-image: url('../../assets/images/sprites/designs/design-sprite-f74e73c1.png');
+     background-image: url('../../assets/images/sprites/designs/design-sprite-e059e586.png');
   }
 
 .design--life-lessons-speaker-logo {
@@ -984,7 +980,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .design {
-     background-image: url('../../assets/images/sprites/designs/design-sprite-f74e73c1.png');
+     background-image: url('../../assets/images/sprites/designs/design-sprite-e059e586.png');
   }
 
 .design--rfdprint-logo {
@@ -994,7 +990,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .no-svg .design {
-     background-image: url('../../assets/images/sprites/designs/design-sprite-f74e73c1.png');
+     background-image: url('../../assets/images/sprites/designs/design-sprite-e059e586.png');
   }
 
 .design--rlc-drywall-services-logo {
@@ -1062,17 +1058,14 @@ Instead edit gulp/templates/sprite */
     right: 0;
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    -webkit-transition: all .3s ease-out;
+    transform: scale(1.2);
     transition: all .3s ease-out;
 }
 
 .modal--is-visible {
         opacity: 1;
         visibility: visible;
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
 
 .modal__inner {
@@ -1082,7 +1075,7 @@ Instead edit gulp/templates/sprite */
         height: 100%;
         max-width: 1236px;
         width: 100%;
-       
+
         margin-left: auto;
         margin-right: auto;
         left: 0;
@@ -1097,8 +1090,7 @@ Instead edit gulp/templates/sprite */
              padding:18px;
             margin-top: 35px;
             top: 50%;
-            -webkit-transform: translateY(-50%);
-                    transform: translateY(-50%);
+            transform: translateY(-50%);
             overflow: hidden
 
 
@@ -1118,10 +1110,8 @@ Instead edit gulp/templates/sprite */
         top: 15px;
         right: 15px;
         font-size: 2rem;
-        -webkit-transform: scaleX(1.2);
-                transform: scaleX(1.2);
-        -webkit-transform-origin: 100% 0;
-                transform-origin: 100% 0;
+        transform: scaleX(1.2);
+        transform-origin: 100% 0;
         color: #47657F;
         cursor: pointer;
     }
@@ -1157,7 +1147,7 @@ Instead edit gulp/templates/sprite */
 
 .social-icons__icon {
             width: 100px;
-            margin: 0 10px 20px 10px
+            margin: 0 10px 20px 10px;
     }
   }
 
@@ -1170,8 +1160,7 @@ Instead edit gulp/templates/sprite */
             position: absolute;
             top: 50%;
             left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
 
 .portfolio {
@@ -1197,7 +1186,7 @@ Instead edit gulp/templates/sprite */
 .portfolio__design {
             /* width: 33.33%; */
             /* margin: 0 10px 20px 10px; */
-            margin: 0
+            margin: 0;
     }
   }
 
@@ -1206,9 +1195,14 @@ Instead edit gulp/templates/sprite */
             position: absolute;
             top: 50%;
             left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
+
+.tabs::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .tabs {
     min-width: 300px;
@@ -1217,15 +1211,8 @@ Instead edit gulp/templates/sprite */
     position: relative;
 }
 
-.tabs::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
 .tabs__tab-links-wrapper {
         display: none;
-        margin: 0 auto;
     }
 
 @media (min-width: 800px) {
@@ -1240,6 +1227,10 @@ Instead edit gulp/templates/sprite */
     clear: both;
     display: table;
   }
+
+.tabs__tab-links-wrapper {
+        margin: 0 auto;
+}
 
 .tabs__tab_drawer {
         padding: 10px;
@@ -1267,9 +1258,8 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 800px) {
 
 .tabs__tab_drawer {
-            display: none
-
-    }
+            display: none;
+  }
   }
 
 .tabs__tab-links {
@@ -1307,13 +1297,9 @@ Instead edit gulp/templates/sprite */
         height: 0;
         padding: 0;
 
-        -webkit-transform-origin: 50% 0;
-
-                transform-origin: 50% 0;
-        -webkit-transition: all .5s, height 3s ease-out;
+        transform-origin: 50% 0;
         transition: all .5s, height 3s ease-out;
-        -webkit-transform: scaleY(0);
-                transform: scaleY(0);
+        transform: scaleY(0);
     }
 
 @media (min-width: 800px) {
@@ -1338,8 +1324,7 @@ Instead edit gulp/templates/sprite */
 
         visiblity: visible;
         opacity: 1;
-        -webkit-transform: scaleY(1);
-                transform: scaleY(1);
+        transform: scaleY(1);
         margin-bottom: 10px;
         height: auto;
     }
@@ -1390,15 +1375,15 @@ Instead edit gulp/templates/sprite */
         line-height: 1.8;
     }
 
-.tabs__card-content {
-        padding: 20px;
-    }
-
 .tabs__card-content::after {
     content: "";
     clear: both;
     display: table;
   }
+
+.tabs__card-content {
+        padding: 20px;
+}
 
 .tabs__index {
         color: #47657F;

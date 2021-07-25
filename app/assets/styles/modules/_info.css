@@ -14,7 +14,7 @@
         padding: 25px;
 
          &__profile-link{
-            display: block; 
+            display: block;
             text-align: center;
         }
 
@@ -38,7 +38,7 @@
         @mixin atLarge{
             margin: 18px auto;
             width: 100%;
-           
+
         }
     }
 
@@ -50,7 +50,7 @@
     width: 95%;
     height: 95%;
     margin: 35px auto 0 auto;
-    border: 6px solid rgba(#DAEEFF, .8);
+    border: 6px solid #bfd0df;
   }
 
    &--responsive-visible {

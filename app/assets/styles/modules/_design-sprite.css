@@ -2,11 +2,11 @@
 Instead edit gulp/templates/sprite */
 
     .design {
-      background-image: url('../../assets/images/sprites/designs/design-sprite-f74e73c1.svg');
+      background-image: url('../../assets/images/sprites/designs/design-sprite-e059e586.svg');
     }
 
   .no-svg .design {
-     background-image: url('../../assets/images/sprites/designs/design-sprite-f74e73c1.png');
+     background-image: url('../../assets/images/sprites/designs/design-sprite-e059e586.png');
   }
 
   .design--cherry-blossom-logo {
@@ -16,7 +16,7 @@ Instead edit gulp/templates/sprite */
   }
 
   .no-svg .design {
-     background-image: url('../../assets/images/sprites/designs/design-sprite-f74e73c1.png');
+     background-image: url('../../assets/images/sprites/designs/design-sprite-e059e586.png');
   }
 
   .design--life-lessons-speaker-logo {
@@ -26,7 +26,7 @@ Instead edit gulp/templates/sprite */
   }
 
   .no-svg .design {
-     background-image: url('../../assets/images/sprites/designs/design-sprite-f74e73c1.png');
+     background-image: url('../../assets/images/sprites/designs/design-sprite-e059e586.png');
   }
 
   .design--rfdprint-logo {
@@ -36,7 +36,7 @@ Instead edit gulp/templates/sprite */
   }
 
   .no-svg .design {
-     background-image: url('../../assets/images/sprites/designs/design-sprite-f74e73c1.png');
+     background-image: url('../../assets/images/sprites/designs/design-sprite-e059e586.png');
   }
 
   .design--rlc-drywall-services-logo {
